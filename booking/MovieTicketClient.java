@@ -19,6 +19,8 @@ public class MovieTicketClient implements Runnable{
 
     @Override
     public void run() {
+        System.out.println(this.name + "i ordered " + tickets);
         movieTicketServer.bookTickets(name, tickets);
+
     }
 }

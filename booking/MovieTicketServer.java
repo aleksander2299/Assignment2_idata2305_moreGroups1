@@ -3,7 +3,7 @@ package booking;
 
 public class MovieTicketServer {
     private String movieName;
-    private int totalTickets;
+    private volatile int totalTickets;
 
     public MovieTicketServer(String movieName, int totalTickets) {
         this.movieName = movieName;
