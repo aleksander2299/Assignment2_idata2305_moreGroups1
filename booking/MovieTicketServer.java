@@ -10,12 +10,12 @@ public class MovieTicketServer {
         this.totalTickets = totalTickets;
     }
 
-    public void bookTickets(String name, int tickets) {
+    public synchronized void bookTickets(String name, int tickets) {
         if (tickets > totalTickets) {
             System.out.println("Not enough tickets");
         } else {
             totalTickets -= tickets;
-            System.out.println("Booked");
+            System.out.println("Booked: " + totalTickets + "this amount of tickets left ");
         }
     }
 }
