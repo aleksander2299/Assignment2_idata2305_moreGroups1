@@ -9,10 +9,10 @@ public class Main {
         );
 
         // Creating 4 threads
-        Thread t1 = new MovieTicketClient(movieTicketServer, "Xiangming", 3);
-        Thread t2 = new MovieTicketClient(movieTicketServer, "Ilaria", 2);
-        Thread t3 = new MovieTicketClient(movieTicketServer, "Sam", 3);
-        Thread t4 = new MovieTicketClient(movieTicketServer, "Andreas", 4);
+        Thread t1 = new Thread(new MovieTicketClient(movieTicketServer, "Xiangming", 3));
+        Thread t2 = new Thread(new MovieTicketClient(movieTicketServer, "Ilaria", 2));
+        Thread t3 = new Thread(new MovieTicketClient(movieTicketServer, "Sam", 3));
+        Thread t4 = new Thread(new MovieTicketClient(movieTicketServer, "Andreas", 4));
 
         // Starting all threads
         t1.start();
@@ -20,3 +20,4 @@ public class Main {
         t3.start();
         t4.start();
     }
+}

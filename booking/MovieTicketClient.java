@@ -1,6 +1,6 @@
 package booking;
 
-public class MovieTicketClient {
+public class MovieTicketClient implements Runnable{
 
     private MovieTicketServer movieTicketServer;
     private String name;
@@ -13,6 +13,12 @@ public class MovieTicketClient {
     }
 
     public void start() {
+
+        movieTicketServer.bookTickets(name, tickets);
+    }
+
+    @Override
+    public void run() {
         movieTicketServer.bookTickets(name, tickets);
     }
 }
