@@ -1,6 +1,9 @@
 import booking.MovieTicketServer;
 import booking.MovieTicketClient;
 
+/**
+ * Main class to test the MovieTicketServer and MovieTicketClient classes
+ */
 public class Main {
     public static void main(String[] args) {
         MovieTicketServer movieTicketServer = new MovieTicketServer(
