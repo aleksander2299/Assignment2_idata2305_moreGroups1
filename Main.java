@@ -2,7 +2,7 @@ import booking.MovieTicketServer;
 import booking.MovieTicketClient;
 
 public class Main {
-    public static void main(String[] args) {
+    public synchronized static void main(String[] args) throws InterruptedException {
         MovieTicketServer movieTicketServer = new MovieTicketServer(
                 "Troll",
                 10

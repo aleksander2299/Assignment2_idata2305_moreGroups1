@@ -15,7 +15,7 @@ public class MovieTicketServer {
             System.out.println("Not enough tickets");
         } else {
             totalTickets -= tickets;
-            System.out.println("Booked: " + totalTickets + "this amount of tickets left ");
+            System.out.println("Booked: " + totalTickets + " this amount of tickets left ");
         }
     }
 }
