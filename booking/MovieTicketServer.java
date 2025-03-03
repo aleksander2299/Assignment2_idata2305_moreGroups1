@@ -1,6 +1,8 @@
 package booking;
 
-
+/**
+ * Server class to book tickets for a movie
+ */
 public class MovieTicketServer {
     private String movieName;
     private volatile int totalTickets;

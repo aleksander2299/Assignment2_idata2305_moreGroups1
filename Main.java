@@ -1,6 +1,9 @@
 import booking.MovieTicketServer;
 import booking.MovieTicketClient;
 
+/**
+ * Main class to test the MovieTicketServer and MovieTicketClient classes
+ */
 public class Main {
     public synchronized static void main(String[] args) throws InterruptedException {
         MovieTicketServer movieTicketServer = new MovieTicketServer(

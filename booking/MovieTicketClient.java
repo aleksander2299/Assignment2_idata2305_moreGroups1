@@ -1,5 +1,8 @@
 package booking;
 
+/**
+ * Client class to book tickets for a movie
+ */
 public class MovieTicketClient implements Runnable{
 
     private MovieTicketServer movieTicketServer;
